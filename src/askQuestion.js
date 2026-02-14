@@ -16,7 +16,7 @@ function isAnswerTrue(randNum, answer) {
   const isNumEven = isEven(randNum)
   const trueAnswer = isNumEven ? 'yes' : 'no'
 
-  const isAnswerTrue = (answer === `yes`) === isNumEven
+  const isAnswerTrue = answer === trueAnswer
 
   console.log(
     isAnswerTrue
