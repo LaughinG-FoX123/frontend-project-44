@@ -1,16 +1,15 @@
-import askQuestion from "./askQuestion.js";
+import askQuestion from './askQuestion.js'
 
 export default (name) => {
-    for(let i = 0; i < 3; i++){
-        const isAnswerTrue = askQuestion()
+  let isAnswerTrue = true
 
-        if(isAnswerTrue) {
-            console.log(`Correct!`)
-        } else {
-            console.log(`It's a wrong answer
-Let's try again, ${name}!`)
-            return
-        }
+  for (let i = 0; i < 3 && isAnswerTrue; i++) {
+    isAnswerTrue = askQuestion()
+
+    if (!(isAnswerTrue)) {
+      console.log(`Let's try again, ${name}!`)
+      return
     }
-    console.log(`Congratulations, ${name}!`)
+  }
+  console.log(`Congratulations, ${name}!`)
 }

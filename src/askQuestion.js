@@ -2,11 +2,11 @@ import readlineSync from 'readline-sync'
 import generateRandNum from './generateRandNum.js'
 import isEven from './isEven.js'
 
-
 export default () => {
   const randNum = generateRandNum()
-  const answer = readlineSync.question(`Question: ${randNum} `)
-  
+  console.log(`Question: ${randNum} `)
+  const answer = readlineSync.question(`Your answer: `)
+
   const isAnsTrue = isAnswerTrue(randNum, answer)
 
   return isAnsTrue
@@ -14,6 +14,15 @@ export default () => {
 
 function isAnswerTrue(randNum, answer) {
   const isNumEven = isEven(randNum)
+  const trueAnswer = isNumEven ? 'yes' : 'no'
 
-  return (answer === `yes`) === isNumEven
+  const isAnswerTrue = (answer === `yes`) === isNumEven
+
+  console.log(
+    isAnswerTrue
+      ? 'Correct!'
+      : `'${answer}' is wrong answer ;(. Correct answer was '${trueAnswer}'.`,
+  )
+
+  return isAnswerTrue
 }
