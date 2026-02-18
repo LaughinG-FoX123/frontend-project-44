@@ -1,9 +1,4 @@
 #!/usr/bin/env node
-import helloAndGetName from '../src/cli.js'
-import even from '../src/even.js'
+import index from '../src/index.js'
 
-const name = helloAndGetName()
-
-console.log(`Answer "yes" if the number is even, otherwise answer "no".`)
-
-even(name)
+index('even')
