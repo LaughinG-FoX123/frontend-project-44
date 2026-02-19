@@ -1,9 +1,7 @@
-import readlineSync from 'readline-sync'
 import generateRandNum from '../generateRandNum.js'
 import checkAnswer from '../checkAnswer.js'
 import askThreeQues from '../askThreeQues.js'
 import askQues from '../askQues.js'
-
 
 export default (name) => {
   console.log(`Answer "yes" if the number is even, otherwise answer "no".`)

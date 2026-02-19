@@ -4,23 +4,32 @@ import askThreeQues from '../askThreeQues.js'
 import askQues from '../askQues.js'
 
 export default (name) => {
-  console.log('What is the result of the expression?')
+  console.log('Find the greatest common divisor of given numbers.')
 
   askThreeQues(name, askQuestion)
 }
 
 function askQuestion() {
-  const a = generateRandNum(0, 50)
-  const b = generateRandNum(0, 50)
+  const a = generateRandNum(0, 100)
+  const b = generateRandNum(0, 100)
 
-  const symbols = ['*', '+', '-']
-  const randSymb = symbols[Math.floor(Math.random() * 3)]
-
-  console.log(`Question: ${a} ${randSymb} ${b}`)
+  console.log(`Question: ${a} ${b}`)
 
   const userAnswer = askQues()
-  const trueAnswer = randSymb === '+' ? a + b : randSymb === '-' ? a - b : randSymb === '*' ? a * b : 0
+  const trueAnswer = gcd(a, b)
 
   const isAnswerTrue = checkAnswer(userAnswer, trueAnswer)
   return isAnswerTrue
+}
+
+const gcd = (a, b) => {
+  a = Math.abs(a)
+  b = Math.abs(b)
+
+  while (b !== 0) {
+    let temp = b
+    b = a % b
+    a = temp
+  }
+  return a
 }
