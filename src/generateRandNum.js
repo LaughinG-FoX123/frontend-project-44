@@ -1,3 +1,3 @@
-export default () => {
-  return Math.floor(Math.random() * 100)
+export default (start, end) => {
+  return Math.floor(Math.random() * end + start)
 }

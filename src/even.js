@@ -1,44 +1,25 @@
-import helloAndGetName from '../src/cli.js'
 import readlineSync from 'readline-sync'
 import generateRandNum from './generateRandNum.js'
+import checkAnswer from './checkAnswer.js'
+import askThreeQues from './askThreeQues.js'
+import askQues from './askQues.js'
+
 
 export default (name) => {
   console.log(`Answer "yes" if the number is even, otherwise answer "no".`)
 
-  let isAnswerTrue = true
-
-  for (let i = 0; i < 3 && isAnswerTrue; i++) {
-    isAnswerTrue = askQuestion()
-
-    if (!(isAnswerTrue)) {
-      console.log(`Let's try again, ${name}!`)
-      return
-    }
-  }
-  console.log(`Congratulations, ${name}!`)
+  askThreeQues(name, askQuestion)
 }
 
 const askQuestion = () => {
-  const randNum = generateRandNum()
+  const randNum = generateRandNum(0, 100)
   console.log(`Question: ${randNum} `)
-  const answer = readlineSync.question(`Your answer: `)
+  const userAnswer = askQues()
 
-  const isAnsTrue = isAnswerTrue(randNum, answer)
-
-  return isAnsTrue
-}
-
-function isAnswerTrue(randNum, answer) {
   const isNumEven = randNum % 2 == 0
   const trueAnswer = isNumEven ? 'yes' : 'no'
 
-  const isAnswerTrue = answer === trueAnswer
-
-  console.log(
-    isAnswerTrue
-      ? 'Correct!'
-      : `'${answer}' is wrong answer ;(. Correct answer was '${trueAnswer}'.`,
-  )
+  const isAnswerTrue = checkAnswer(userAnswer, trueAnswer)
 
   return isAnswerTrue
 }
