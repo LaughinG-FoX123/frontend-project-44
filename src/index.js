@@ -1,6 +1,6 @@
 import helloAndGetName from '../src/cli.js'
-import even from './even.js'
-import calc from './calc.js'
+import even from './games/even.js'
+import calc from './games/calc.js'
 
 export default (game) => {
   const name = helloAndGetName()

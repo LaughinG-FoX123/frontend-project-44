@@ -1,8 +1,8 @@
 import readlineSync from 'readline-sync'
-import generateRandNum from './generateRandNum.js'
-import checkAnswer from './checkAnswer.js'
-import askThreeQues from './askThreeQues.js'
-import askQues from './askQues.js'
+import generateRandNum from '../generateRandNum.js'
+import checkAnswer from '../checkAnswer.js'
+import askThreeQues from '../askThreeQues.js'
+import askQues from '../askQues.js'
 
 
 export default (name) => {
