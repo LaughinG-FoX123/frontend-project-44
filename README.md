@@ -3,4 +3,8 @@
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=LaughinG-FoX123_frontend-project-44&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=LaughinG-FoX123_frontend-project-44)
 
+Installation:
 https://asciinema.org/a/LJ0xSj8aHMbGPBSj
+
+Gameplay:
+https://asciinema.org/a/Wl6DnM3k3WT3Dimv
