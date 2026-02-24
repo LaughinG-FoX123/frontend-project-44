@@ -2,6 +2,7 @@ import helloAndGetName from '../src/cli.js'
 import even from './games/even.js'
 import calc from './games/calc.js'
 import gcd from './games/gcd.js'
+import progression from './games/progression.js'
 
 export default (game) => {
   const name = helloAndGetName()
@@ -19,6 +20,10 @@ export default (game) => {
       gcd(name)
       break
 
+    case 'progression':
+      progression(name)
+      break
+    
     case 'games':
       return
   }
