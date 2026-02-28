@@ -14,7 +14,7 @@ function askQuestion() {
   const b = generateRandNum(0, 50)
 
   const symbols = ['*', '+', '-']
-  const randSymb = symbols[generateRandNum(0,3)]
+  const randSymb = symbols[generateRandNum(0, 3)]
 
   console.log(`Question: ${a} ${randSymb} ${b}`)
 
