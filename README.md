@@ -3,7 +3,7 @@
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=LaughinG-FoX123_frontend-project-44&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=LaughinG-FoX123_frontend-project-44)
 
-Данный проект представляет из себя мой первый тренировочный проект на Hexlet
+Данный проект представляет из себя мой первый тренировочный проект на Hexlet.
 
 INSTALLATION
 
