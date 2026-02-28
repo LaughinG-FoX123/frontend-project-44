@@ -3,10 +3,22 @@
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=LaughinG-FoX123_frontend-project-44&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=LaughinG-FoX123_frontend-project-44)
 
-Installation:
+Данный проект представляет из себя мой первый тренировочный проект на Hexlet
+
+INSTALLATION
+
+1.Copy HTTPS link in github repo in green button "code"
+
+Clone repo:
+https://asciinema.org/a/rb2IZMEPpyfZnOFe
+
+Make install:
+https://asciinema.org/a/RQtfgyMJFbKHq4j2
 
 
-GAMEPLAY:
+
+GAMEPLAY
+
 1.brain-games:
 https://asciinema.org/a/ZOkzzX3M6C38kcnZ
 
